@@ -156,7 +156,7 @@ class _ImagesPage extends State<ImagesPage> {
 
   Future<String> fetchDataOnline() async {
     var jsonData = await http.get(Uri.parse(
-        "https://raw.githubusercontent.com/GeorgeHu6/learnflutter/main/static/image_list.json"));
+        "https://raw.githubusercontent.com/szh12/flutterbook2/main/static/image_list.json"));
     var fetchData = jsonDecode(jsonData.body);
 
     print(fetchData);
